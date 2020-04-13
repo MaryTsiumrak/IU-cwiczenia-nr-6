@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Strona Master Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1514px;
+            height: 210px;
+        }
+        .auto-style2 {
+            height: 71px;
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 210px;
+            width: 292px;
+            text-align: center;
+        }
+        .auto-style4 {
+            text-align: center;
+            height: 142px;
+        }
+        .auto-style5 {
+            font-size: xx-large;
+            color: #3399FF;
+            font-weight: normal;
+        }
+        .auto-style6 {
+            color: #6600FF;
+        }
+        .auto-style7 {
+            font-size: x-large;
+            color: #33CCFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                <table>
+                    <tr>
+                        <td colspan="3" class="auto-style4">
+                            <h2>
+                            <asp:Label ID="Label1" runat="server" Text="Przykład schematu Master Page – strona testowa" CssClass="auto-style5"></asp:Label>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+                            <asp:Label ID="Label3" runat="server" Text="Menu" CssClass="auto-style7"></asp:Label>
+                            <br />
+                            <asp:HyperLink ID="HyperLink1" runat="server">Pierwsza strona</asp:HyperLink>
+                            <br />
+                            <asp:HyperLink ID="HyperLink2" runat="server">Druga strona</asp:HyperLink>  
+                        </td>
+                        <td colspan="2" class="auto-style1"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="auto-style2">
+                            <asp:Label ID="Label2" runat="server" Text="Created by Maryna Tsiumrak" CssClass="auto-style6"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
